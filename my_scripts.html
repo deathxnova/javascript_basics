@@ -7,8 +7,11 @@
     <script>
       const dataArr = ["Lukas", "Karolis", "Ana", "Petras", "Leja"];
       function myFunc(arr) {
-        for (i = 0; arr.length < 5; i++) {
-          console.log(arr[i]);
+        let ieskomasVardas = "Karolis";
+        for (let i = 0; i < arr.length; i++) {
+          if (arr[i] == ieskomasVardas) {
+            document.getElementById("masyvas").innerHTML = i;
+          }
         }
       }
     </script>
