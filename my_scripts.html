@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+</head>
+<body>
+
+    <div id="content">
+
+    </div>
+    <button onclick="myFunc(dataArr)">Spausk</button>
+<script>
+const dataArr = [1,4,5,6,8,9,10,12,15,20]
+
+function myFunc(arr){
+    arr.forEach(item => {
+        if(item % 2 == 0){
+            document.getElementById('content').append(item)
+        }
+
+    });
+}
+
+
+</script>
+</body>
+</html>
